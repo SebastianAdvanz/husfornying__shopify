@@ -1,0 +1,28 @@
+<a id="w-node-_5197af2f-6ca9-b084-eefb-1fdc7fcbb150-7fcbb150" href="{% if section.settings.button_link %}{{ section.settings.button_link }}{% else %}{{ pages["diy-inspiration"].url }}{% endif %}" class="button w-inline-block">
+            <div class="_18eb-button">{{ section.settings.18eb_button_text }}</div><img src="{{ 'arrow_right.svg' | asset_url }}" loading="lazy" id="w-node-_5197af2f-6ca9-b084-eefb-1fdc7fcbb153-7fcbb150" alt="" class="button_arrow">
+          </a>
+
+{% unless request.design_mode %}
+<script>var currentSection = document.currentScript.closest('.shopify-section'); currentSection.outerHTML = currentSection.innerHTML;</script>
+{% endunless %}
+        
+{% schema %}
+{
+  "name": "button-standard",
+  "tag": "div",
+  "class": "button w-inline-block",
+  "settings": [
+    {
+      "id": "button_link",
+      "label": "button - Link",
+      "type": "url"
+    },
+    {
+      "type": "richtext",
+      "id": "18eb_button_text",
+      "label": "18eb-button - Text",
+      "default": "<p>Text Area</p>"
+    }
+  ]
+}
+{% endschema %}

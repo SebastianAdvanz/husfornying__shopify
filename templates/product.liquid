@@ -1,0 +1,78 @@
+{%- assign headerSnippetPath = "header-product" -%}{%- assign wfPage = "6287f70afacfda7619333419" -%}{%- assign bodyClasses = "" -%}
+  <div class="section-header wf-section">
+    {%- render 'navbar' -%}
+  </div>
+  <div class="section-padding wf-section">
+    <div class="backtools">
+      {%- section 'link_small-and-inverted' -%}
+    </div>
+  </div>
+  <div class="section-padding wf-section">
+    <div class="w-layout-grid grid-product">
+      <div id="w-node-_58e472cd-a807-81fe-f06f-12c6dadc4106-19333419" class="product-photos">
+        <div class="w-layout-grid grid-product-photos">
+          {%- if settings.collection_products_template != blank -%}{%- render "markup_for_collection_products_template" -%}{%- else -%}{%- render "products_where__id_eq_current" -%}{%- endif -%}
+          {% if product.variants.size > 1 and product.selected_or_first_available_variant.metafields.udesly['more-images'].size > 0 %}{%- assign setItems = product.selected_or_first_available_variant.metafields.udesly['more-images'] -%}<div id="w-node-_9cbaab2f-03aa-c4a6-79b4-a91a181ad645-19333419" class="w-dyn-list" data-commerce-type="more-images">
+            {%- unless setItems.size == 0 -%}<div role="list" class="collection-list-8 w-dyn-items w-row">
+              {%- for setItem in setItems -%}<div role="listitem" class="collection-item-10 w-dyn-item w-col w-col-6"><img src="{{ setItem.more-images }}" loading="lazy" alt="" class="image-26"></div>{%- endfor -%}
+            </div>{%- endunless -%}
+            {%- if setItems.size == 0 -%}<div class="w-dyn-empty">
+              <div>{{ 't3d503d2b' | t }}</div>
+            </div>{%- endif -%}
+          <template><div id="w-node-_9cbaab2f-03aa-c4a6-79b4-a91a181ad645-19333419" class="w-dyn-list" udesly-repeater="true" data-commerce-type="more-images">
+            <div role="list" class="collection-list-8 w-dyn-items w-row">
+              <div role="listitem" class="collection-item-10 w-dyn-item w-col w-col-6"><img src="{# setItem.more-images #}" loading="lazy" alt="" class="image-26"></div>
+            </div>
+            <div class="w-dyn-empty">
+              <div>No items found.</div>
+            </div>
+          </div></template></div>{% else %}{%- assign setItems = product.images -%}<div id="w-node-_9cbaab2f-03aa-c4a6-79b4-a91a181ad645-19333419" class="w-dyn-list" data-commerce-type="more-images">
+            {%- unless setItems.size == 0 -%}<div role="list" class="collection-list-8 w-dyn-items w-row">
+              {%- for setItem in setItems -%}<div role="listitem" class="collection-item-10 w-dyn-item w-col w-col-6"><img src="{{ setItem | product_img_url: 'master' }}" loading="lazy" alt="" class="image-26"></div>{%- endfor -%}
+            </div>{%- endunless -%}
+            {%- if setItems.size == 0 -%}<div class="w-dyn-empty">
+              <div>{{ 't3d503d2b' | t }}</div>
+            </div>{%- endif -%}
+          </div>{%- endif -%}
+        </div>
+      </div>
+      <div id="w-node-_89672907-18fe-126c-0e9d-2fc098676bed-19333419" class="product-content">
+        <h1 class="h3-blue">{{ product.title }}</h1>
+        <div class="_18reg">{{ product.metafields.udesly['description'] }}</div>
+        <div class="label-done"><img src="{{ 'label_done.svg' | asset_url }}" loading="lazy" alt="" class="image-25">
+          <div>{{ 'tn68b6b385' | t }}</div>
+        </div>
+        <h4 data-commerce-type="variation-price" class="h4-blue">{{ product.price | money }}</h4>
+        <div class="add-to-cart">
+          {%- form "product", product, data-node-type: "commerce-add-to-cart-form", class: "w-commerce-commerceaddtocartform" -%}{%- unless product.has_only_default_variant or product.variants.size == 1 -%}<div data-node-type="add-to-cart-option-list" position-id="2bbf1906-6679-e552-1a3e-1269572f0ccf">{%- for option in product.options_with_values -%}<fieldset data-node-type="add-to-cart-option" style="{% if product.has_only_default_variant or product.variants.size == 1 %}display: none; {% endif %}"><label data-node-type="add-to-cart-option-label" class="field-label-3">{{ option.name }}</label><select data-node-type="add-to-cart-option-select" class="w-select" style="display: none;" name="{{ "option" | append: forloop.index }}">{%- render "product-options", option: option -%}</select><div data-node-type="add-to-cart-option-pill-group" class="button-group w-commerce-commerceaddtocartoptionpillgroup" aria-label="{{ "option" | append: forloop.index  }}">{%- for value in option.values -%}<div data-node-type="add-to-cart-option-pill" class="btn-size-type w-commerce-commerceaddtocartoptionpill" data-option-name="{{ value | handle }}"><div data-node-type="block" class="text-block-2">{{ value }}</div></div>{%- endfor -%}</div></fieldset>{%- endfor -%}</div>{%- endunless -%}{%- unless product.type == "e348fd487d0102946c9179d2a94bb613" -%}<label for="quantity-ffc1c054911c5be79236a3b8e34e17b5" position-id="2bbf1906-6679-e552-1a3e-1269572f0cd6" class="field-label-2">{{ 't68afa30f' | t }}</label>{%- endunless -%}{%- unless product.type == "e348fd487d0102946c9179d2a94bb613" -%}<input type="number" pattern="^[0-9]+$" inputmode="numeric" id="quantity-ffc1c054911c5be79236a3b8e34e17b5" name="quantity" min="1" position-id="2bbf1906-6679-e552-1a3e-1269572f0cd8" class="w-commerce-commerceaddtocartquantityinput quantity-2" value="1">{%- endunless -%}<input type="submit" position-id="2bbf1906-6679-e552-1a3e-1269572f0cd9" data-node-type="commerce-add-to-cart-button" data-loading-text="Legger til kurven..." value="Kjøp nå" aria-busy="false" aria-haspopup="dialog" class="w-commerce-commerceaddtocartbutton add-to-cart-button">
+            <a data-node-type="commerce-buy-now-button" data-default-text="Buy now" data-subscription-text="Subscribe now" aria-busy="false" aria-haspopup="false" style="display:none" class="w-commerce-commercebuynowbutton" href="/checkout">{{ 't71bb9a1c' | t }}</a>
+          {%- render "product-variants-data" product: product -%}{%- endform -%}
+          <div tabindex="0" style="display:none" class="w-commerce-commerceaddtocartoutofstock">
+            <div>{{ 't7aaa2dac' | t }}</div>
+          </div>
+          <div aria-live="assertive" data-node-type="commerce-add-to-cart-error" style="display:none" class="w-commerce-commerceaddtocarterror">
+            <div data-node-type="commerce-add-to-cart-error" data-w-add-to-cart-quantity-error="Product is not available in this quantity." data-w-add-to-cart-general-error="Something went wrong when adding this item to the cart." data-w-add-to-cart-mixed-cart-error="You can’t purchase another product with a subscription." data-w-add-to-cart-buy-now-error="Something went wrong when trying to purchase this item." data-w-add-to-cart-checkout-disabled-error="Checkout is disabled on this site." data-w-add-to-cart-select-all-options-error="Please select an option in each set.">{{ 'tn1c765d0d' | t }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-padding wf-section">
+    <div class="cards-tool">
+      <div class="content-cardtool">
+        <h3 class="h3-blue center">{{ 'tb6835f3' | t }}</h3>
+      </div>
+      <div class="tools-card">
+        {%- if settings.collection_2_products_template != blank -%}{%- render "markup_for_collection_2_products_template" -%}{%- else -%}{%- render "products_max_4_where_category_idin_categorytools" -%}{%- endif -%}
+      </div>
+      <div class="b-btn">
+        {%- render 'button_normal-and-allred' -%}
+      </div>
+    </div>
+  </div>
+  {%- render 'footer' -%}
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6287bb88d050e6c7bbe247e8" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="{{ 'webflow.js' | asset_url }}" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+
+{{ 'udesly-shopify.min.js' | asset_url | script_tag }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.1/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script>

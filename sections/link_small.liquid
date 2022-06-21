@@ -1,0 +1,28 @@
+<a id="w-node-a2b1d84b-c7e7-4ad1-ea3e-332c764fdad1-764fdad1" href="{% if section.settings.link_link %}{{ section.settings.link_link }}{% else %}#{% endif %}" class="link small w-inline-block">
+            <div class="_14sb-button">{{ section.settings.14sb_button_text }}</div><img src="{{ 'arrow_right.svg' | asset_url }}" loading="lazy" alt="" class="link_arrow small">
+          </a>
+
+{% unless request.design_mode %}
+<script>var currentSection = document.currentScript.closest('.shopify-section'); currentSection.outerHTML = currentSection.innerHTML;</script>
+{% endunless %}
+        
+{% schema %}
+{
+  "name": "link_small",
+  "tag": "div",
+  "class": "link small w-inline-block",
+  "settings": [
+    {
+      "id": "link_link",
+      "label": "link - Link",
+      "type": "url"
+    },
+    {
+      "type": "richtext",
+      "id": "14sb_button_text",
+      "label": "14sb-button - Text",
+      "default": "<p>Text Area</p>"
+    }
+  ]
+}
+{% endschema %}

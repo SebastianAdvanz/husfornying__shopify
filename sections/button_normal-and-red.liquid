@@ -1,0 +1,28 @@
+<a id="w-node-_23271725-2409-6432-5946-284ed3c86893-d3c86893" href="{% if section.settings.button_link %}{{ section.settings.button_link }}{% else %}{{ pages["stairs-renewal-landing"].url }}{% endif %}" class="button normal-redstroke w-inline-block">
+              <div class="_18sb-button red">{{ section.settings.18sb_button_text }}</div><img src="{{ 'arrow_right.svg' | asset_url }}" loading="lazy" alt="" class="button_arrow small">
+            </a>
+
+{% unless request.design_mode %}
+<script>var currentSection = document.currentScript.closest('.shopify-section'); currentSection.outerHTML = currentSection.innerHTML;</script>
+{% endunless %}
+        
+{% schema %}
+{
+  "name": "button_normal&red",
+  "tag": "div",
+  "class": "button normal-redstroke w-inline-block",
+  "settings": [
+    {
+      "id": "button_link",
+      "label": "button - Link",
+      "type": "url"
+    },
+    {
+      "type": "richtext",
+      "id": "18sb_button_text",
+      "label": "18sb-button - Text",
+      "default": "<p>Text Area</p>"
+    }
+  ]
+}
+{% endschema %}

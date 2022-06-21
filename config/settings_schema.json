@@ -1,0 +1,944 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "husfornying",
+    "theme_author": "Udesly User",
+    "theme_version": "1.0.0",
+    "theme_documentation_url": "https://www.domain.tld",
+    "theme_support_email": "support@email.com"
+  },
+  {
+    "name": "Seo Settings",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon Image",
+        "info": "Will be scaled down to 32x32px"
+      },
+      {
+        "type": "image_picker",
+        "id": "apple_touch_icon",
+        "label": "Apple touch icon image",
+        "info": "Will be scaled down to 120x120px"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter_link",
+        "label": "Twitter Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_product_rich_snippets",
+        "label": "Enable Product Rich Snippets",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_article_rich_snippets",
+        "label": "Enable Article Rich Snippets",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Colors Settings",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_20748b16",
+        "label": "Color 20748b16",
+        "default": "#3898ec"
+      },
+      {
+        "type": "color",
+        "id": "color_21d1ff8",
+        "label": "Color 21d1ff8",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "color_n665b9284",
+        "label": "Color n665b9284",
+        "default": "rgba(0, 0, 0, 0.8)"
+      },
+      {
+        "type": "color",
+        "id": "color_n65194d1d",
+        "label": "Color n65194d1d",
+        "default": "rgba(0, 0, 0, 0.25)"
+      },
+      {
+        "type": "color",
+        "id": "color_746d8885",
+        "label": "Color 746d8885",
+        "default": "#e6e6e6"
+      },
+      {
+        "type": "color",
+        "id": "color_nd2a2d19",
+        "label": "Color nd2a2d19",
+        "default": "#fafafa"
+      },
+      {
+        "type": "color",
+        "id": "color_21c2f7a",
+        "label": "Color 21c2f7a",
+        "default": "#ddd"
+      },
+      {
+        "type": "color",
+        "id": "color_207fce5",
+        "label": "Color 207fce5",
+        "default": "#999"
+      },
+      {
+        "type": "color",
+        "id": "color_203c2ae",
+        "label": "Color 203c2ae",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "color_n4bc568a",
+        "label": "Color n4bc568a",
+        "default": "#ffdede"
+      },
+      {
+        "type": "color",
+        "id": "color_21bb73b",
+        "label": "Color 21bb73b",
+        "default": "#ccc"
+      },
+      {
+        "type": "color",
+        "id": "color_2069428",
+        "label": "Color 2069428",
+        "default": "#666"
+      },
+      {
+        "type": "color",
+        "id": "color_2052b6b",
+        "label": "Color 2052b6b",
+        "default": "#333"
+      },
+      {
+        "type": "color",
+        "id": "color_n58536e15",
+        "label": "Color n58536e15",
+        "default": "#f5f5f5"
+      },
+      {
+        "type": "color",
+        "id": "color_n575d7d08",
+        "label": "Color n575d7d08",
+        "default": "#101a5f"
+      },
+      {
+        "type": "color",
+        "id": "color_680fb63d",
+        "label": "Color 680fb63d",
+        "default": "#3b83f7"
+      },
+      {
+        "type": "color",
+        "id": "color_n4b83dde",
+        "label": "Color n4b83dde",
+        "default": "#fff0f2"
+      },
+      {
+        "type": "color",
+        "id": "color_n77ae1037",
+        "label": "Color n77ae1037",
+        "default": "#5754d2"
+      },
+      {
+        "type": "color",
+        "id": "color_54c63e62",
+        "label": "Color 54c63e62",
+        "default": "#cc55b8"
+      },
+      {
+        "type": "color",
+        "id": "color_6a8eb1b",
+        "label": "Color 6a8eb1b",
+        "default": "#6b69d2"
+      },
+      {
+        "type": "color",
+        "id": "color_n6117ba62",
+        "label": "Color n6117ba62",
+        "default": "#a5a8c2"
+      },
+      {
+        "type": "color",
+        "id": "color_n7e7fd188",
+        "label": "Color n7e7fd188",
+        "default": "#535986"
+      },
+      {
+        "type": "color",
+        "id": "color_777048e0",
+        "label": "Color 777048e0",
+        "default": "#8f93b2"
+      },
+      {
+        "type": "color",
+        "id": "color_5665582",
+        "label": "Color 5665582",
+        "default": "#c3c6d7"
+      },
+      {
+        "type": "color",
+        "id": "color_746e0276",
+        "label": "Color 746e0276",
+        "default": "#e6e7ed"
+      },
+      {
+        "type": "color",
+        "id": "color_n5d72e072",
+        "label": "Color n5d72e072",
+        "default": "#f2f3f7"
+      },
+      {
+        "type": "color",
+        "id": "color_n54e85a28",
+        "label": "Color n54e85a28",
+        "default": "#f7f8fc"
+      },
+      {
+        "type": "color",
+        "id": "color_7d34fd11",
+        "label": "Color 7d34fd11",
+        "default": "#04ac78"
+      },
+      {
+        "type": "color",
+        "id": "color_71900bf3",
+        "label": "Color 71900bf3",
+        "default": "#e6163b"
+      },
+      {
+        "type": "color",
+        "id": "color_3a594aab",
+        "label": "Color 3a594aab",
+        "default": "#d3d3d3"
+      },
+      {
+        "type": "color",
+        "id": "color_n50b2863c",
+        "label": "Color n50b2863c",
+        "default": "rgba(107, 105, 210, 0.23)"
+      },
+      {
+        "type": "color",
+        "id": "color_n6519549f",
+        "label": "Color n6519549f",
+        "default": "rgba(0, 0, 0, 0.23)"
+      },
+      {
+        "type": "color",
+        "id": "color_n6519ccbf",
+        "label": "Color n6519ccbf",
+        "default": "rgba(0, 0, 0, 0.12)"
+      },
+      {
+        "type": "color",
+        "id": "color_n4d44d10b",
+        "label": "Color n4d44d10b",
+        "default": "#160042"
+      },
+      {
+        "type": "color",
+        "id": "color_2f7b252f",
+        "label": "Color 2f7b252f",
+        "default": "rgba(23, 9, 54, 0.08)"
+      },
+      {
+        "type": "color",
+        "id": "color_6b24a18",
+        "label": "Color 6b24a18",
+        "default": "#6b7094"
+      },
+      {
+        "type": "color",
+        "id": "color_72ae8c10",
+        "label": "Color 72ae8c10",
+        "default": "rgba(23, 0, 69, 0)"
+      },
+      {
+        "type": "color",
+        "id": "color_n14d66b72",
+        "label": "Color n14d66b72",
+        "default": "#282556"
+      },
+      {
+        "type": "color",
+        "id": "color_n2a6e1475",
+        "label": "Color n2a6e1475",
+        "default": "#b6b9ce"
+      },
+      {
+        "type": "color",
+        "id": "color_n47fa5159",
+        "label": "Color n47fa5159",
+        "default": "#642eff"
+      },
+      {
+        "type": "color",
+        "id": "color_8338b05",
+        "label": "Color 8338b05",
+        "default": "#6c39ff"
+      },
+      {
+        "type": "color",
+        "id": "color_7103da6d",
+        "label": "Color 7103da6d",
+        "default": "#e4e6f1"
+      },
+      {
+        "type": "color",
+        "id": "color_n387bb843",
+        "label": "Color n387bb843",
+        "default": "rgba(125, 123, 220, 0.94)"
+      },
+      {
+        "type": "color",
+        "id": "color_n77e926a",
+        "label": "Color n77e926a",
+        "default": "#ff2c2c"
+      },
+      {
+        "type": "color",
+        "id": "color_n783ee323",
+        "label": "Color n783ee323",
+        "default": "rgba(35, 9, 108, 0.25)"
+      },
+      {
+        "type": "color",
+        "id": "color_n39bf7cf8",
+        "label": "Color n39bf7cf8",
+        "default": "rgba(16, 26, 95, 0.25)"
+      },
+      {
+        "type": "color",
+        "id": "color_n5a66276f",
+        "label": "Color n5a66276f",
+        "default": "#9b9ea3"
+      },
+      {
+        "type": "color",
+        "id": "color_n1baac1ef",
+        "label": "Color n1baac1ef",
+        "default": "#242326"
+      },
+      {
+        "type": "color",
+        "id": "color_n3f4e7231",
+        "label": "Color n3f4e7231",
+        "default": "#696969"
+      },
+      {
+        "type": "color",
+        "id": "color_7c3c27ed",
+        "label": "Color 7c3c27ed",
+        "default": "#501aff"
+      },
+      {
+        "type": "color",
+        "id": "color_n5a681503",
+        "label": "Color n5a681503",
+        "default": "#9b9b9b"
+      },
+      {
+        "type": "color",
+        "id": "color_n6516a1e7",
+        "label": "Color n6516a1e7",
+        "default": "rgba(0, 0, 0, 0.81)"
+      },
+      {
+        "type": "color",
+        "id": "color_n665b9a06",
+        "label": "Color n665b9a06",
+        "default": "rgba(0, 0, 0, 0.6)"
+      },
+      {
+        "type": "color",
+        "id": "color_n65169a65",
+        "label": "Color n65169a65",
+        "default": "rgba(0, 0, 0, 0.83)"
+      },
+      {
+        "type": "color",
+        "id": "color_n6517ec3f",
+        "label": "Color n6517ec3f",
+        "default": "rgba(0, 0, 0, 0.56)"
+      },
+      {
+        "type": "color",
+        "id": "color_n4a02006",
+        "label": "Color n4a02006",
+        "default": "#fffefe"
+      },
+      {
+        "type": "color",
+        "id": "color_n65177ba1",
+        "label": "Color n65177ba1",
+        "default": "rgba(0, 0, 0, 0.65)"
+      },
+      {
+        "type": "color",
+        "id": "color_n6518645f",
+        "label": "Color n6518645f",
+        "default": "rgba(0, 0, 0, 0.45)"
+      },
+      {
+        "type": "color",
+        "id": "color_n65171646",
+        "label": "Color n65171646",
+        "default": "rgba(0, 0, 0, 0.71)"
+      },
+      {
+        "type": "color",
+        "id": "color_n665b9645",
+        "label": "Color n665b9645",
+        "default": "rgba(0, 0, 0, 0.7)"
+      },
+      {
+        "type": "color",
+        "id": "color_n665ba188",
+        "label": "Color n665ba188",
+        "default": "rgba(0, 0, 0, 0.4)"
+      },
+      {
+        "type": "color",
+        "id": "color_n387c28e1",
+        "label": "Color n387c28e1",
+        "default": "rgba(125, 123, 220, 0.85)"
+      }
+    ]
+  },
+  {
+    "name": "Products Collection Settings",
+    "settings": [
+      {
+        "type": "collection",
+        "id": "collection_home",
+        "label": "Collection Home"
+      },
+      {
+        "type": "range",
+        "id": "collection_home_limit",
+        "label": "Collection Home limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_2_home",
+        "label": "Collection 2 Home"
+      },
+      {
+        "type": "range",
+        "id": "collection_2_home_limit",
+        "label": "Collection 2 Home limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_3_home",
+        "label": "Collection 3 Home"
+      },
+      {
+        "type": "range",
+        "id": "collection_3_home_limit",
+        "label": "Collection 3 Home limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_4_home",
+        "label": "Collection 4 Home"
+      },
+      {
+        "type": "range",
+        "id": "collection_4_home_limit",
+        "label": "Collection 4 Home limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_5_home",
+        "label": "Collection 5 Home"
+      },
+      {
+        "type": "range",
+        "id": "collection_5_home_limit",
+        "label": "Collection 5 Home limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_6_home",
+        "label": "Collection 6 Home"
+      },
+      {
+        "type": "range",
+        "id": "collection_6_home_limit",
+        "label": "Collection 6 Home limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_7_home",
+        "label": "Collection 7 Home"
+      },
+      {
+        "type": "range",
+        "id": "collection_7_home_limit",
+        "label": "Collection 7 Home limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_8_home",
+        "label": "Collection 8 Home"
+      },
+      {
+        "type": "range",
+        "id": "collection_8_home_limit",
+        "label": "Collection 8 Home limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_products_template",
+        "label": "Collection Products Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_products_template_limit",
+        "label": "Collection Products Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_2_products_template",
+        "label": "Collection 2 Products Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_2_products_template_limit",
+        "label": "Collection 2 Products Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_categories_template",
+        "label": "Collection Categories Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_categories_template_limit",
+        "label": "Collection Categories Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_2_categories_template",
+        "label": "Collection 2 Categories Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_2_categories_template_limit",
+        "label": "Collection 2 Categories Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_3_categories_template",
+        "label": "Collection 3 Categories Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_3_categories_template_limit",
+        "label": "Collection 3 Categories Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_4_categories_template",
+        "label": "Collection 4 Categories Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_4_categories_template_limit",
+        "label": "Collection 4 Categories Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_5_categories_template",
+        "label": "Collection 5 Categories Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_5_categories_template_limit",
+        "label": "Collection 5 Categories Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_6_categories_template",
+        "label": "Collection 6 Categories Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_6_categories_template_limit",
+        "label": "Collection 6 Categories Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_7_categories_template",
+        "label": "Collection 7 Categories Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_7_categories_template_limit",
+        "label": "Collection 7 Categories Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_8_categories_template",
+        "label": "Collection 8 Categories Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_8_categories_template_limit",
+        "label": "Collection 8 Categories Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_interior_colors_template",
+        "label": "Collection Interior colors Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_interior_colors_template_limit",
+        "label": "Collection Interior colors Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_2_interior_colors_template",
+        "label": "Collection 2 Interior colors Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_2_interior_colors_template_limit",
+        "label": "Collection 2 Interior colors Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_3_interior_colors_template",
+        "label": "Collection 3 Interior colors Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_3_interior_colors_template_limit",
+        "label": "Collection 3 Interior colors Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_4_interior_colors_template",
+        "label": "Collection 4 Interior colors Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_4_interior_colors_template_limit",
+        "label": "Collection 4 Interior colors Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_exterior_colors_template",
+        "label": "Collection Exterior colors Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_exterior_colors_template_limit",
+        "label": "Collection Exterior colors Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_2_exterior_colors_template",
+        "label": "Collection 2 Exterior colors Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_2_exterior_colors_template_limit",
+        "label": "Collection 2 Exterior colors Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_3_exterior_colors_template",
+        "label": "Collection 3 Exterior colors Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_3_exterior_colors_template_limit",
+        "label": "Collection 3 Exterior colors Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_4_exterior_colors_template",
+        "label": "Collection 4 Exterior colors Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_4_exterior_colors_template_limit",
+        "label": "Collection 4 Exterior colors Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_diy_stories_template",
+        "label": "Collection DIY-stories Template"
+      },
+      {
+        "type": "range",
+        "id": "collection_diy_stories_template_limit",
+        "label": "Collection DIY-stories Template limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_shopping_cart",
+        "label": "Collection Shopping Cart"
+      },
+      {
+        "type": "range",
+        "id": "collection_shopping_cart_limit",
+        "label": "Collection Shopping Cart limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_paint_order_page_from_start",
+        "label": "Collection Paint Order Page (From Start)"
+      },
+      {
+        "type": "range",
+        "id": "collection_paint_order_page_from_start_limit",
+        "label": "Collection Paint Order Page (From Start) limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_2_paint_order_page_from_start",
+        "label": "Collection 2 Paint Order Page (From Start)"
+      },
+      {
+        "type": "range",
+        "id": "collection_2_paint_order_page_from_start_limit",
+        "label": "Collection 2 Paint Order Page (From Start) limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_pop_up",
+        "label": "Collection Pop-Up"
+      },
+      {
+        "type": "range",
+        "id": "collection_pop_up_limit",
+        "label": "Collection Pop-Up limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_product_list_colors_interior_page",
+        "label": "Collection Product List Colors Interior Page"
+      },
+      {
+        "type": "range",
+        "id": "collection_product_list_colors_interior_page_limit",
+        "label": "Collection Product List Colors Interior Page limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_exterior_paint_order_page_from_start",
+        "label": "Collection Exterior Paint Order Page (From Start)"
+      },
+      {
+        "type": "range",
+        "id": "collection_exterior_paint_order_page_from_start_limit",
+        "label": "Collection Exterior Paint Order Page (From Start) limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_2_exterior_paint_order_page_from_start",
+        "label": "Collection 2 Exterior Paint Order Page (From Start)"
+      },
+      {
+        "type": "range",
+        "id": "collection_2_exterior_paint_order_page_from_start_limit",
+        "label": "Collection 2 Exterior Paint Order Page (From Start) limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_stairs_renewal_order_page",
+        "label": "Collection Stairs Renewal_Order Page"
+      },
+      {
+        "type": "range",
+        "id": "collection_stairs_renewal_order_page_limit",
+        "label": "Collection Stairs Renewal_Order Page limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_2_stairs_renewal_order_page",
+        "label": "Collection 2 Stairs Renewal_Order Page"
+      },
+      {
+        "type": "range",
+        "id": "collection_2_stairs_renewal_order_page_limit",
+        "label": "Collection 2 Stairs Renewal_Order Page limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "collection",
+        "id": "collection_product_list_colors_exterior_page",
+        "label": "Collection Product List Colors Exterior Page "
+      },
+      {
+        "type": "range",
+        "id": "collection_product_list_colors_exterior_page_limit",
+        "label": "Collection Product List Colors Exterior Page  limit",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "default": 3
+      }
+    ]
+  }
+]

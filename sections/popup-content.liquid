@@ -1,0 +1,36 @@
+{%- if section.settings.image_image == nil -%}<img src="{{ '.svg' | asset_url }}" loading="lazy" alt="" class="image">{%- else -%}<img src="{{ section.settings.image_image.src | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.image_image.alt | escape }}" class="image">{%- endif -%}
+        <h3 class="white">{{ section.settings.popup_heading }}</h3>
+        <p class="_20sb-martel white">{{ 'tn5286fc08' | t }}</p>
+        <div class="popup_button_div">
+          <a sym-bind="{&quot;link&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;data&quot;},&quot;prop&quot;:&quot;f3a335b2-2fed-e0bb-e3a9-277281dab2f5&quot;}}}" id="w-node-_054e0e55-4e34-c282-2a49-ddbf4a796d1e-4a796d1e" href="#" class="button normal-allred w-inline-block">
+            <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;data&quot;},&quot;prop&quot;:&quot;85e8eb60-6c9f-16e7-8e05-221fc43a205e&quot;}}}" class="_18sb-button white">{{ 'tn544d7e4a' | t }}</div><img src="{{ 'arrow_right_1.svg' | asset_url }}" loading="lazy" alt="" class="button_arrow small">
+          </a>
+          <a id="w-node-_715bbb14-3be6-57d1-4b28-99632a13e6e8-2a13e6e8" href="#" class="button normal-red w-inline-block">
+            <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;data&quot;},&quot;prop&quot;:&quot;ad4198b9-4239-ae51-420e-f9c3ed0c9c0d&quot;}}}" class="_18sb-button">{{ 'tn544d7e4a' | t }}</div><img src="{{ 'arrow_right_1.svg' | asset_url }}" loading="lazy" alt="" class="button_arrow small">
+          </a>
+        </div>
+        <a data-w-id="37fd837f-3fc7-03a8-0eeb-991de929d10d" href="#" class="close-popup-button">{{ 't5b9b9' | t }}</a>
+      
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","popup-card");</script>
+        
+{% schema %}
+{
+  "name": "Popup-Content",
+  "tag": "div",
+  "class": "popup-card",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_image",
+      "label": "Image - Image"
+    },
+    {
+      "type": "text",
+      "id": "popup_heading",
+      "label": "Popup Heading",
+      "default": "This is your popup heading"
+    }
+  ]
+}
+{% endschema %}

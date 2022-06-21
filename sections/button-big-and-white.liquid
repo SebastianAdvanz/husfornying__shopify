@@ -1,0 +1,28 @@
+<a id="w-node-_73a60781-da78-3c82-7cfb-63d5bbbadde0-bbbadde0" href="{% if section.settings.button_link %}{{ section.settings.button_link }}{% else %}#Section-Whoweare{% endif %}" class="button big-white w-inline-block">
+        <div class="_18eb-caps-button">{{ section.settings.18caps_button_text }}</div><img src="{{ 'arrow_right.svg' | asset_url }}" loading="lazy" id="w-node-_73a60781-da78-3c82-7cfb-63d5bbbadde3-bbbadde0" alt="" class="button_arrow">
+      </a>
+
+{% unless request.design_mode %}
+<script>var currentSection = document.currentScript.closest('.shopify-section'); currentSection.outerHTML = currentSection.innerHTML;</script>
+{% endunless %}
+        
+{% schema %}
+{
+  "name": "button-big&white",
+  "tag": "div",
+  "class": "button big-white w-inline-block",
+  "settings": [
+    {
+      "id": "button_link",
+      "label": "button - Link",
+      "type": "url"
+    },
+    {
+      "type": "richtext",
+      "id": "18caps_button_text",
+      "label": "18caps-button - Text",
+      "default": "<p>Text Area</p>"
+    }
+  ]
+}
+{% endschema %}

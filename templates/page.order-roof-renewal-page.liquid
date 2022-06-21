@@ -1,0 +1,45 @@
+{%- assign headerSnippetPath = "header-pagestyle-guide" -%}{%- assign wfPage = "62ab5f655bc64b7e57715f1d" -%}{%- assign bodyClasses = "" -%}
+  <div class="section-header wf-section">
+    {%- render 'navbar' -%}
+  </div>
+  <div class="section-padding wf-section">
+    <div class="content-order-roof">
+      <div class="w-layout-grid grid-content-order-roof">
+        <div class="content-form">
+          <div class="hero-order-roofs">
+            <h1 class="h2-blue">{{ 'tn5f964d8a' | t }}</h1>
+            <div class="_16reg">{{ 'tn15e2d52' | t }}</div>
+          </div>
+          <div class="w-form">
+            {%- form "contact",  class: "" -%}
+              <div class="customer-name">
+                <div class="full-name-titel"><label for="name-2" class="_16reg">{{ 'tn33504ebb' | t }}<span class="text-span-10">{{ 't2a' | t }}</span></label><input type="text" class="text-field-6 w-input" maxlength="256" name="contact[field_]" data-name="Field 3" placeholder="" id="field-3" required=""></div>
+                <div class="full-name-input"><label for="name-2" class="_16reg">{{ 'tn6eb65f15' | t }}<span class="text-span-10">{{ 't2a' | t }}</span></label></div>
+              </div><label for="contact[name]" class="_16reg">{{ 't7bec1424' | t }}<span class="text-span-10">{{ 't2a' | t }}</span></label><input type="text" class="text-field-12 w-input" maxlength="256" name="contact[name]" data-name="Name" placeholder="" id="name"><label for="email" class="_16reg">{{ 't33bd4925' | t }}<span class="text-span-10">{{ 't2a' | t }}</span></label><input type="email" class="text-field-11 w-input" maxlength="256" name="contact[email]" data-name="Email 4" placeholder="" id="email-4" required=""><label for="email_" class="_16reg">{{ 't6eee40b8' | t }}<span class="text-span-10">{{ 't2a' | t }}</span></label>
+              <div class="input-number">
+                <div class="number-titel-copy"><label for="name-2" class="_16reg">{{ 't384c00d7' | t }}<span class="text-span-10">{{ 't2a' | t }}</span></label></div>
+                <div class="number-input"><label for="name-2" class="_16reg">{{ 't7f5ba073' | t }}<span class="text-span-10">{{ 't2a' | t }}</span></label></div>
+              </div><label for="email-5" class="_16reg">{{ 't3e1a3f5' | t }}<span class="text-span-10">{{ 't2a' | t }}</span></label><label for="email_" class="_16reg">{{ 'tn63dc6819' | t }}</label><input type="submit" value="Bestill gratis inspeksjon →" data-wait="Please wait..." class="button big-allred formexter mtop60 w-button">
+            {%- assign form_success = form.posted_successfully? -%}{%- assign form_errors = form.errors -%}{%- render "form-general-script", form_success: form_success, form_errors: form_errors -%}{%- endform -%}
+            <div class="w-form-done  {% if form_success %}form-posted-successfully{% endif %}">
+              <div>{{ 't5a0ea5a1' | t }}</div>
+            </div>
+            {%- unless form_success -%}<div class="w-form-fail  {% if form.errors %}form-has-errors{% endif %}">
+              <div>{%- render "form-errors", form_errors: form_errors -%}</div>
+            </div>{%- endunless -%}
+          </div>
+        </div>
+        <div id="w-node-_35a1075e-eba1-057c-70b1-482e0b6bbc14-57715f1d" class="pictures-2">
+          <div class="image-column-orderp">
+            <div data-w-id="35a1075e-eba1-057c-70b1-482e0b6bbc16" class="img01 big"><img src="{{ 'small-stairs.png' | asset_url }}" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 90vw, (max-width: 1086px) 92vw, 1000px" srcset="{{ 'small-stairs-p-500.png' | asset_url }} 500w, {{ 'small-stairs-p-800.png' | asset_url }} 800w, {{ 'small-stairs.png' | asset_url }} 1000w" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {%- render 'footer' -%}
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6287bb88d050e6c7bbe247e8" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="{{ 'webflow.js' | asset_url }}" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+
+{{ 'udesly-shopify.min.js' | asset_url | script_tag }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.1/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script>

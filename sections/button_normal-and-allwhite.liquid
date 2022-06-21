@@ -1,0 +1,23 @@
+<a id="w-node-_715bbb14-3be6-57d1-4b28-99632a13e6e8-2a13e6e8" href="#" class="button normal-red w-inline-block">
+            <div class="_18sb-button">{{ section.settings.18sb_button_text }}</div><img src="{{ 'arrow_right_1.svg' | asset_url }}" loading="lazy" alt="" class="button_arrow small">
+          </a>
+
+{% unless request.design_mode %}
+<script>var currentSection = document.currentScript.closest('.shopify-section'); currentSection.outerHTML = currentSection.innerHTML;</script>
+{% endunless %}
+        
+{% schema %}
+{
+  "name": "button_normal&allwhite",
+  "tag": "div",
+  "class": "button normal-red w-inline-block",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "18sb_button_text",
+      "label": "18sb-button - Text",
+      "default": "<p>Text Area</p>"
+    }
+  ]
+}
+{% endschema %}
